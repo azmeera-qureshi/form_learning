@@ -1,0 +1,128 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>form learning</title>
+	<link rel="stylesheet" type="text/css" href="form stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<header><h1>...Registration Form...</h1></header>
+<body>
+
+<div id="inforequest">
+	<form id="info" method="post" action="/action_page.php">
+		<fieldset>
+			<br><br>
+
+		<label for="firstname">First Name</label>
+	<input type="text" name="" id="firstname"><br><br>
+	<label for="lastname">Last Name</label>
+	<input type="text" name="" id="lastname"><br><br>
+	<label for="Email">Email Address</label>
+	<input type="email" name="" id="Email" required=""><br><br>
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="pwd">
+	<br><br>
+
+<label for="gender">Select gender</label><br>
+	<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  <br><br>
+
+  <label for="birthday">Date of Birth:</label>
+  <input type="Date" id="birthday" name="birthday">
+  <br><br>
+  <!--<p>Use the min and max attributes to add restrictions to dates:</p>
+<label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+  -->
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <br><br>
+
+  <label for="image">Upload your image</label>
+  <input type="file" id="myfile" name="myfile">
+  <br><br>
+
+<label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+  <br><br>
+  
+	<label for="phone">Phone Number</label>
+	<input type="text" name="" id="phone" pattern="[0-9] {3}-[0-9] {3}-[0-9] {4}" placeholder="031-234-5678"><br><br>
+
+<label for="Country">Type country name you are living in:</label>
+	<input type="text" name="country" id="country"><br><br>
+
+	<label for="provinces">Choose a province you are living in:</label>
+	<input list="provinces" name="provinces">
+  <datalist id="provinces" >
+    <option value="Sindh"></option>
+    <option value="Punjab"></option>
+    <option value="balochistan"></option>
+    <option value="KPK"></option>
+    <option value="baltistan"></option>
+    <option value="Other"></option>
+  </datalist>
+<br><br>
+
+	<label for="hearing" >How did you hear about us</label>
+	<select id="hearing">
+		<option value="TV">TV</option>
+		<option value="Radio">Radio</option>
+		<option value="Friend">Friends</option>
+		<option value="social media">Social Media</option>
+		<option value="University">University</option>
+		<option value="Other">Other</option>
+	</select><br><br>
+
+	<label for="activities">What are your activities</label><br>
+	<input type="checkbox" name="activities" value="Reading">Reading</input><br>
+	<input type="checkbox" name="activities" value="Singing">Singing</input><br>
+	<input type="checkbox" name="activities" value="Playing spors">Playing Sports</input><br><br>
+	<!--to provide multiple choices we use checkboxes while for providing 1 option we use radio.-->
+	<label for="interest">Area of interest</label>
+	<textarea name="interest"></textarea><br><br>
+	<!--we can define width and hiegth for textarea-->
+
+
+<label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+	<label>Any question regarding form</label>
+	<button type="button" onclick="alert('No question allowed! still working on it!')">Click Me!</button>
+	<br><br>
+
+
+	<input type="submit" name="submit" id="submit" value="submit">
+	<input type="reset" name="reset"><br><br>
+		</fieldset>
+	 </form>
+</div>
+
+<footer id="Contact">
+<br>
+<i class="fa fa-github-square fa-2x" aria-hidden="true"  > &nbsp;</i>
+<i class="fa fa-instagram fa-2x" aria-hidden="true"> &nbsp;</i>
+<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"> &nbsp;</i>
+<i class="fa fa-facebook-square fa-2x" aria-hidden="true"> &nbsp;</i>
+<i class="fa fa-telegram fa-2x" aria-hidden="true"> &nbsp;</i>
+
+<i class="fa fa-address-book fa-2x" aria-hidden="true"> &nbsp;</i>
+
+<br>
+<p>  copyright &copy; 2020 Azmeera Qureshi All Rights Reserved</p>
+</footer>
+</body>
+</html>
